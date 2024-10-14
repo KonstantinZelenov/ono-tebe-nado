@@ -82,10 +82,12 @@ body {
 }
 
 .address {
+  display: flex;
+  flex-direction: column;
   flex-shrink: 0;
   grid-area: address;
   justify-self: right;
-  padding-top: 5px;
+  padding-top: 7px;
   padding-right: 63px;
   color: #000;
   font-family: Raleway;
@@ -94,11 +96,14 @@ body {
   font-style: normal;
   line-height: 24.3px;
   letter-spacing: 0.18px;
+  gap: 3px;
 }
 
 .address a {
   border-bottom: 1px solid black;
   text-decoration: none;
+  width: fit-content;
+  line-height: 20px;
 }
 
 .address-text {
@@ -108,8 +113,12 @@ body {
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  line-height: 24.3px;
+  line-height: 22px;
   letter-spacing: normal;
+}
+
+.address-span {
+  display: block;
 }
 
 /*Конец header, начало main, секция cover*/
@@ -354,22 +363,22 @@ body {
   display: grid;
   grid-template-columns: 240px 1fr;
   grid-template-rows: 1fr;
+  gap: 72px;
   width: calc(100% - 48px);
   margin: auto;
+  margin-bottom: 180px;
   padding-top: 35px;
   padding-left: 47px;
-  gap: 72px;
-  margin-bottom: 180px;
 }
 
-.grid-item-logo {
-  height: 240px;
-  background-color: black;
-  border-radius: 50%;
+.about__logo {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
+  height: 240px;
+  border-radius: 50%;
+  background-color: black;
 }
 
 .about__logo-image {
@@ -378,33 +387,101 @@ body {
 }
 
 .about__info-header {
-  color: #000;
-  font-family: Raleway;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-transform: uppercase;
   padding-top: 102px;
   padding-bottom: 100px;
+  color: #000;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 40px;
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 .about__info-text {
+  padding-bottom: 25px;
   color: #000;
   font-family: Raleway;
+  font-weight: 400;
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.1px;
-  padding-bottom: 25px;
 }
 
 .about__info-text-last {
   color: #000;
   font-family: Raleway;
+  font-weight: 400;
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
   line-height: 24px;
 }
+
+/*Закончил about начал footer*/
+
+.footer {
+display: flex;
+flex-direction: row;
+width: calc(100% - 100px);
+margin: auto;
+justify-content: space-between;
+}
+
+.address-footer {
+  padding: 0;
+}
+
+.footer-address-text {
+  line-height: 23px;
+}
+
+.address a {
+  line-height: 21px;
+}
+
+.footer-menu {
+  text-align: center;
+  font-size: 18px;
+  padding-left: 35px;
+}
+
+.underline-a {
+  display: inline-block;
+  border-bottom: 1px solid black;
+}
+
+.social-icons {
+  display: flex;
+  gap: 48px;
+}
+
+.footer__links-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.footer__links-list-item a {
+  text-decoration: none;
+}
+
+.footer-link-icons {
+  display: block;
+  width: 48px;
+  height: 48px;
+  text-decoration: none;
+}
+
+
+.footer-link-icons-img {
+  width: 48px;
+  height: 48px;
+}
+
+
+
+
+
+
+
