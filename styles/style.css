@@ -1,6 +1,5 @@
 /*Начало header */
 
-
 body {
   display: flex;
   flex-direction: column;
@@ -96,9 +95,9 @@ body {
 
 .address-text {
   flex-shrink: 0;
+  font-style: normal;
   line-height: 22px;
   letter-spacing: normal;
-  font-style: normal;
 }
 
 .address-span {
