@@ -3,11 +3,11 @@
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translateX(-50%);
+  z-index: 5;
+  width: 1100px;
     opacity: 0.5;
       filter: sepia(0.6);
-  width: 1100px;
-  z-index: 5;
+    transform: translateX(-50%);
   pointer-events: none;
   } 
   
@@ -36,8 +36,8 @@ body {
 .header__links-list {
   display: flex;
   flex-direction: row;
-  padding-left: 27.5px;
   gap: 30px;
+  padding-left: 27.5px;
 }
 
 .header__links-list-item {
@@ -165,8 +165,8 @@ body {
 
 .aligned-text_right {
   line-height: 98px;
-  text-align: right;
   letter-spacing: 30px;
+  text-align: right;
 }
 
 .aligned-text_right::first-letter {
@@ -343,8 +343,8 @@ body {
   align-content: center;
   height: 240px;
   border-radius: 50%;
-  background-color: #000;
   padding-top: 1px;
+  background-color: #000;
 }
 
 .about__logo-image {
@@ -435,9 +435,9 @@ margin-bottom: 88px;
 }
 
 .footer__icons-list {
-  list-style: none;
   display: flex;
   gap: 48px;
+  list-style: none;
 }
 
 
